@@ -1,0 +1,278 @@
+{
+  "$id": "http://kitset.io/tableSchema.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "id": {
+      "$id": "/properties/id",
+      "type": "integer",
+      "title": "The Id Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "api_id": {
+      "$id": "/properties/api_id",
+      "type": "integer",
+      "title": "The Api_id Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "name": {
+      "$id": "/properties/name",
+      "type": "string",
+      "title": "The Name Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "devices"
+      ]
+    },
+    "type": {
+      "$id": "/properties/type",
+      "type": "string",
+      "title": "The Type Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "object"
+      ]
+    },
+    "top": {
+      "$id": "/properties/top",
+      "type": "integer",
+      "title": "The Top Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        85
+      ]
+    },
+    "left": {
+      "$id": "/properties/left",
+      "type": "integer",
+      "title": "The Left Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        330
+      ]
+    },
+    "created_at": {
+      "$id": "/properties/created_at",
+      "type": "string",
+      "title": "The Created_at Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2018-01-25 08:02:24"
+      ]
+    },
+    "updated_at": {
+      "$id": "/properties/updated_at",
+      "type": "string",
+      "title": "The Updated_at Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2018-01-25 08:16:49"
+      ]
+    },
+    "columns": {
+      "$id": "/properties/columns",
+      "type": "array",
+      "items": {
+        "$id": "/properties/columns/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/columns/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          },
+          "table_id": {
+            "$id": "/properties/columns/items/properties/table_id",
+            "type": "integer",
+            "title": "The Table_id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          },
+          "name": {
+            "$id": "/properties/columns/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "id"
+            ]
+          },
+          "type": {
+            "$id": "/properties/columns/items/properties/type",
+            "type": "string",
+            "title": "The Type Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "string"
+            ]
+          },
+          "order": {
+            "$id": "/properties/columns/items/properties/order",
+            "type": "integer",
+            "title": "The Order Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              0
+            ]
+          },
+          "description": {
+            "$id": "/properties/columns/items/properties/description",
+            "type": "string",
+            "title": "The Description Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "devices description."
+            ]
+          },
+          "created_at": {
+            "$id": "/properties/columns/items/properties/created_at",
+            "type": "string",
+            "title": "The Created_at Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "2018-01-25 08:03:33"
+            ]
+          },
+          "updated_at": {
+            "$id": "/properties/columns/items/properties/updated_at",
+            "type": "string",
+            "title": "The Updated_at Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "2018-01-25 08:03:33"
+            ]
+          }
+        }
+      }
+    },
+    "src_relationships": {
+      "$id": "/properties/src_relationships",
+      "type": "array",
+      "items": {
+        "$id": "/properties/src_relationships/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/src_relationships/items/properties/id",
+            "type": "integer",
+            "title": "The Id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              2
+            ]
+          },
+          "type_id": {
+            "$id": "/properties/src_relationships/items/properties/type_id",
+            "type": "string",
+            "title": "The Type_id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "belongsTo"
+            ]
+          },
+          "name": {
+            "$id": "/properties/src_relationships/items/properties/name",
+            "type": "string",
+            "title": "The Name Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "deviceBelongsToUser"
+            ]
+          },
+          "src_table_id": {
+            "$id": "/properties/src_relationships/items/properties/src_table_id",
+            "type": "integer",
+            "title": "The Src_table_id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              1
+            ]
+          },
+          "src_column_id": {
+            "$id": "/properties/src_relationships/items/properties/src_column_id",
+            "type": "integer",
+            "title": "The Src_column_id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              6
+            ]
+          },
+          "target_table_id": {
+            "$id": "/properties/src_relationships/items/properties/target_table_id",
+            "type": "integer",
+            "title": "The Target_table_id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              2
+            ]
+          },
+          "target_column_id": {
+            "$id": "/properties/src_relationships/items/properties/target_column_id",
+            "type": "integer",
+            "title": "The Target_column_id Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+              7
+            ]
+          },
+          "created_at": {
+            "$id": "/properties/src_relationships/items/properties/created_at",
+            "type": "string",
+            "title": "The Created_at Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "2018-01-25 08:09:44"
+            ]
+          },
+          "updated_at": {
+            "$id": "/properties/src_relationships/items/properties/updated_at",
+            "type": "string",
+            "title": "The Updated_at Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "2018-01-25 08:11:08"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
